@@ -27,5 +27,4 @@ test("Continue without mail", async (t) => {
     .click(UserInfoPage.continueButton)
     .expect(UserInfoPage.missingMailErrorMessage.exists).ok()
     .expect(UserInfoPage.missingMailErrorMessage.innerText).eql('Error: Postal Code is required', 'Checks if the message matches', { timeout: 500 })
- 
-})
+ })

@@ -1,3 +1,5 @@
+//This class is made to declare selectors inside the Overview page
+
 import {Selector} from 'testcafe'
 
 class OverviewPage{

@@ -16,5 +16,4 @@ test("Log Out from Products Page", async (t) => {
     .click(ProductsPage.productsMenuButton)
     .click(ProductsPage.logOutOptionInMenu)
     .expect(LogInPage.logInContainer.exists).ok()
-
 })

@@ -17,5 +17,4 @@ test("Add multiple items to the shopping cart", async (t) => {
     .click(ProductsPage.inventoryProductADDTOCART)
     .expect(ProductsPage.cartCounter.exists).ok()
     .expect(ProductsPage.cartCounter.innerText).eql('2', 'Checks cart items count', { timeout: 500 })
-
 })

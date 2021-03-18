@@ -29,6 +29,4 @@ test("Fill user info and continue to the Overview Page", async (t) => {
     .click(UserInfoPage.continueButton)
     .expect(OverviewPage.overviewPageHeader.exists).ok()
     .expect(OverviewPage.overviewPageHeader.innerText).eql('Checkout: Overview', 'Checks if the page header matches', { timeout: 500 })
-
-
 })

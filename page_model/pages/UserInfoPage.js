@@ -1,3 +1,5 @@
+//This class is made to declare selectors inside the UserInfo page
+
 import {Selector} from 'testcafe'
 
 class UserInfoPage{

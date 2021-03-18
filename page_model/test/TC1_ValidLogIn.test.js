@@ -6,7 +6,7 @@ fixture('Valid Login TestCase')
 
 test("This is a valid LogIn Test Case", async (t) => {
     await t
-    .useRole(Roles.standard_user)       //Using a role for a standard User
+    .useRole(Roles.standard_user)       //Using a role for a standard User (this user should not have any issue)
     .expect(ProductsPage.productsPageTitle).ok()
     .expect(ProductsPage.productsPageTitle.innerText).eql('Products')
 })

@@ -6,10 +6,10 @@ fixture('Problem  user Login TestCase')
 
 test("Problem user Login TestCase", async (t) => {
     await t
-    .useRole(Roles.problem_user)       //Using a role for a problem user
+    .useRole(Roles.problem_user)       //Using the role function for a problem user
     .expect(ProductsPage.productsPageTitle.exists).ok()
     .click(ProductsPage.inventoryProductADDTOCART)
     .expect(ProductsPage.cartCounter.exists).ok()
-    .click(ProductsPage.inventoryProductREMOVE)     //this user does not allow to remove items already in cart
+    .click(ProductsPage.inventoryProductREMOVE)      //The "problem user" has a behavior is not allowed to remove the items already added to the cart
     .expect(ProductsPage.cartCounter.innerText).eql('1', 'Checks cart items count', { timeout: 500 })
 })

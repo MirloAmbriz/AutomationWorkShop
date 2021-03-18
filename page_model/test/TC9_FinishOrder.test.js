@@ -33,7 +33,4 @@ test("Finish Order", async (t) => {
     .click(OverviewPage.finishButton) // Here, I'd specify withText('FINISH') but text might change in future
     .expect(FinishPage.finishPageHeader.innerText).eql('Finish', 'Checks if the page header matches', { timeout: 500 })
     .expect(FinishPage.finishContainer.exists).ok()
-    
-
-
 })
